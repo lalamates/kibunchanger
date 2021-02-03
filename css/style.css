@@ -1,0 +1,434 @@
+@charset "UTF-8";
+
+/* 共通部分----------------- */
+html {
+    /* 基本フォントサイズを16px */
+    font-size: 100%
+}
+
+body {
+    /* フォントの設定 */
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    /* 文字の高さ */
+    background-color: #AADBE9;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+img {
+    max-width: 100%
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.wrapper02 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0.4%;
+    text-align: center;
+
+}
+
+.wrapper03 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0.5%;
+
+}
+
+.wrapper04 {
+    max-width: 100%;
+    margin: 10px auto 100px;
+    padding: 10px 0;
+
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+
+.header-sp {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.header-pc {
+    display: none;
+}
+
+.mainarea-sp {
+    max-width: 98%;
+    display: block;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+    margin-top: -6px;
+}
+
+.mainarea-pc {
+    display: none;
+}
+
+.aniarea {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+}
+
+.fukuro-area {
+    display: block;
+    position: relative;
+    max-width: 280px;
+
+}
+
+.fukuro-area p {
+    position: absolute;
+    font-size: 1.2rem;
+   
+
+    top: 28%;
+    left: 5%;
+}
+
+#fukuroword {
+    padding: 5%;
+    margin: auto 5% auto 1%;
+     text-shadow: #fff 1px 1px 0px,#fff -1px 1px 0px,#fff 1px -1px 0px,#fff -1px -1px 0px;
+}
+
+.shika-area {
+    display: block;
+    position: relative;
+    max-width: 280px;
+}
+
+.shika-area p {
+    position: absolute;
+    font-size: 1rem;
+   
+    top: 43%;
+    left: 5%;
+}
+
+#shikaword {
+    padding: 5%;
+    margin: auto 5% auto 1%;
+     text-shadow: #fff 1px 1px 0px,#fff -1px 1px 0px,#fff 1px -1px 0px,#fff -1px -1px 0px;
+
+}
+
+.neko-area {
+    display: block;
+    padding-top: -30%;
+    max-height: 90%;
+    position: relative;
+    max-width: 280px;
+}
+
+.neko-area p {
+    position: absolute;
+    font-size: 1.2rem;
+
+
+    top: 25%;
+    left: 5%;
+}
+
+#nekoword {
+    padding: 5%;
+    margin: auto 5% auto 1%;
+        text-shadow: #fff 1px 1px 0px,#fff -1px 1px 0px,#fff 1px -1px 0px,#fff -1px -1px 0px;
+}
+
+.ans-area {
+    width: 60%;
+    height: 4rem;
+    text-align: center;
+
+}
+
+.button {
+    display: inline-block;
+    border-radius: 5%;
+    /* 角丸       */
+    font-size: 18pt;
+    /* 文字サイズ */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    /* 文字位置   */
+    cursor: pointer;
+    /* カーソル   */
+    padding: 12px 12px;
+    /* 余白       */
+    background: #C97DE2;
+    /* 背景色     */
+    color: #666666;
+    /* 文字色     */
+    line-height: 1em;
+    /* 1行の高さ  */
+    transition: .3s;
+    /* なめらか変化 */
+    box-shadow: 6px 6px 3px #666666;
+    /* 影の設定 */
+    border: 2px solid #C97DE2;
+    /* 枠の指定 */
+    margin-top: 5px;
+}
+
+.button:hover {
+    box-shadow: none;
+    /* カーソル時の影消去 */
+    color: #F4D4E4;
+    /* 背景色     */
+    background: #fff;
+    /* 文字色     */
+}
+
+.bottomarea {
+    max-width: 95%;
+    display: block;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+
+/*入力フィールドの装飾*/
+.inText {
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: top;
+
+    width: 100%;
+    /* 一旦100%幅     */
+    max-width: 300px;
+    /* 入力域の最大幅 */
+    min-height: 30%;
+    max-height: 160px;
+    /* 入力域の高さ   */
+    background: #ffffff;
+    /* 入力域の背景色 */
+    border: 2px solid #565555;
+    /* 入力域の枠線   */
+    border-radius: 10px;
+    /* 入力域の角丸   */
+    padding: 10px 18px;
+    /* 入力文字の余白 */
+    font-size: 28px;
+    text-align: center;
+    /* 入力文字サイズ */
+    color: #333333;
+    /* 入力文字の色   */
+
+    letter-spacing: .1em;
+    /* 入力文字の間隔 */
+}
+
+/* --- 入力フィールドにフォーカスか来たら ----------------*/
+.inText:focus {
+    border-color: #565555;
+    /* 枠線色     */
+    background: rgba(249, 234, 248);
+    /* 背景色     */
+    box-shadow: 4px 4px 2px #999;
+    /* 影付け     */
+    outline: 0;
+}
+
+/* --- 入力説明の文字(標準) -----------------------------*/
+.inText:placeholder-shown {
+    color: #808080;
+    /* 文字色     */
+    font-size: 19px;
+    /* 少し小さく */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/
+.inText::-webkit-input-placeholder {
+    color: #808080;
+    /* 文字色     */
+    font-size: 19px;
+    /* 少し小さく */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+/* タブレット・パソコンでの表示 */
+
+@media (min-width: 490px) {
+    .header-sp {
+        display: none;
+    }
+
+    .header-pc {
+        display: block;
+        width: 100%;
+    }
+
+    .mainarea-sp {
+        display: none;
+    }
+
+    .mainarea-pc {
+        max-width: 98%;
+        display: block;
+        text-align: center;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 1.2rem;
+
+    }
+
+    .mainarea-pc p {
+        margin-top: -5%;
+    }
+
+    .wrapper04 {
+        max-width: 100%;
+        margin: 10px auto 30px;
+        padding: 6px 0;
+
+    }
+
+    .aniarea {
+        max-width: 1300px;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+
+    .fukuro-area {
+        max-width: 360px;
+    }
+
+    .fukuro-area p {
+        font-size: 1rem;
+    }
+
+    .shika-area {
+        max-width: 360px;
+    }
+
+    .shika-area p {
+        font-size: 0.8rem;
+    }
+
+    .neko-area {
+        max-width: 360px;
+    }
+
+    .neko-area p {
+        font-size: 1rem;
+    }
+
+
+
+    .bottomarea {
+
+        font-size: 1.3rem;
+          margin-top: 3%;
+
+    }
+
+
+    @media (min-width: 750px) {
+        .mainarea-pc {
+
+            font-size: 1.4rem;
+            padding-top: -5px;
+            margin-top: -22px;
+
+        }
+
+        .mainarea-pc p {
+            margin-top: -8%;
+        }
+
+        .aniarea {
+            padding-top: 5px;
+        }
+
+        .bottomarea {
+
+            font-size: 1.6rem;
+
+        }
+
+        .fukuro-area p {
+            font-size: 1.3rem;
+        }
+
+        .shika-area p {
+            font-size: 0.8rem;
+        }
+
+        .neko-area p {
+            font-size: 1.3rem;
+        }
+
+
+
+
+        @media (min-width: 1000px) {
+            .wrapper02 {
+                margin-top: 10px;
+            }
+
+            .mainarea-pc {
+
+                font-size: 1.6rem;
+                padding-top: 0;
+                margin-top: 0;
+
+            }
+
+            .mainarea-pc p {
+                margin-top: -90px;
+            }
+
+            .bottomarea {
+
+                font-size: 1.8rem;
+              
+
+            }
+        }
+
+        .fukuro-area p {
+            font-size: 1.4rem;
+        }
+
+        .shika-area p {
+            font-size: 1.2rem;
+        }
+
+        .neko-area p {
+            font-size: 1.4rem;
+        }
+
+
+
+    }
